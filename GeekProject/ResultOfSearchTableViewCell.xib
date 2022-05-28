@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HonyaJi-Re.ttf">
+            <string>HonyaJi-Re</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ResultCell" rowHeight="251" id="F9B-zk-mJh" customClass="ResultOfSearchTableViewCell" customModule="GeekProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="F9B-zk-mJh" id="vDR-vq-GTv">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TLf-R3-fbN">
+                        <rect key="frame" x="20" y="13" width="160" height="160"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="160" id="gaO-ah-3uz"/>
+                            <constraint firstAttribute="height" constant="160" id="qaN-7A-zWC"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ブランド" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oly-z2-D9h">
+                        <rect key="frame" x="188" y="14" width="45" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="aLi-f7-lit"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebG-KM-ivq">
+                        <rect key="frame" x="188" y="30" width="167" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Gnr-e8-LIR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HonyaJi-Re" family="HonyaJi-Re" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="購入日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvP-6c-AaI">
+                        <rect key="frame" x="188" y="52" width="38" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="ZBP-gP-OGf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eY-Fy-qt1">
+                        <rect key="frame" x="188" y="67" width="169" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="ZTe-bT-exD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HonyaJi-Re" family="HonyaJi-Re" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="値段" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xP-MM-Tb3">
+                        <rect key="frame" x="188" y="89" width="23" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="rLq-xC-9uJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ccm-Bc-Juf">
+                        <rect key="frame" x="188" y="102" width="167" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="jcP-j4-8ER"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HonyaJi-Re" family="HonyaJi-Re" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut ls " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1Gk-rb-3qL">
+                        <rect key="frame" x="20" y="181" width="335" height="52"/>
+                        <color key="backgroundColor" red="1" green="0.95938189650000005" blue="0.86264489280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="52" id="DBo-gz-u5s"/>
+                        </constraints>
+                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="着用回数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHL-wo-Go3">
+                        <rect key="frame" x="188" y="120" width="57" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Woc-oL-cEz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzH-4P-l1U">
+                        <rect key="frame" x="188" y="138" width="34" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="TcJ-ln-8c5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HonyaJi-Re" family="HonyaJi-Re" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="1" green="0.95938189646460081" blue="0.86264489283186507" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="TLf-R3-fbN" firstAttribute="top" secondItem="vDR-vq-GTv" secondAttribute="top" constant="13" id="0Uy-PL-QqF"/>
+                    <constraint firstAttribute="trailing" secondItem="oly-z2-D9h" secondAttribute="trailing" constant="142" id="10y-2E-yRC"/>
+                    <constraint firstItem="dzH-4P-l1U" firstAttribute="top" secondItem="Ccm-Bc-Juf" secondAttribute="bottom" constant="15" id="6Vo-LL-44j"/>
+                    <constraint firstItem="tHL-wo-Go3" firstAttribute="top" secondItem="6xP-MM-Tb3" secondAttribute="bottom" constant="17" id="7rh-QI-zNR"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="tHL-wo-Go3" secondAttribute="trailing" constant="110" id="Auz-oA-DH7"/>
+                    <constraint firstItem="dzH-4P-l1U" firstAttribute="leading" secondItem="TLf-R3-fbN" secondAttribute="trailing" constant="8" id="BcC-Ik-X9t"/>
+                    <constraint firstItem="oly-z2-D9h" firstAttribute="leading" secondItem="TLf-R3-fbN" secondAttribute="trailing" constant="8" id="DsM-jH-HBA"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="dzH-4P-l1U" secondAttribute="trailing" constant="133" id="EOC-6h-yFi"/>
+                    <constraint firstItem="Ccm-Bc-Juf" firstAttribute="leading" secondItem="TLf-R3-fbN" secondAttribute="trailing" constant="8" id="FSM-fi-0vf"/>
+                    <constraint firstItem="Ccm-Bc-Juf" firstAttribute="top" secondItem="6eY-Fy-qt1" secondAttribute="bottom" constant="14" id="H6y-cw-ELB"/>
+                    <constraint firstItem="6xP-MM-Tb3" firstAttribute="leading" secondItem="TLf-R3-fbN" secondAttribute="trailing" constant="8" id="IAX-IT-23K"/>
+                    <constraint firstItem="ebG-KM-ivq" firstAttribute="leading" secondItem="TLf-R3-fbN" secondAttribute="trailing" constant="8" id="Kkh-KZ-KsC"/>
+                    <constraint firstItem="Ccm-Bc-Juf" firstAttribute="trailing" secondItem="vDR-vq-GTv" secondAttribute="trailingMargin" id="OJd-Cy-If2"/>
+                    <constraint firstItem="1Gk-rb-3qL" firstAttribute="top" secondItem="TLf-R3-fbN" secondAttribute="bottom" constant="8" id="QQm-fU-RgY"/>
+                    <constraint firstItem="oly-z2-D9h" firstAttribute="top" secondItem="vDR-vq-GTv" secondAttribute="top" constant="14" id="SvS-Na-7af"/>
+                    <constraint firstAttribute="trailing" secondItem="cvP-6c-AaI" secondAttribute="trailing" constant="149" id="VN0-Pt-cBc"/>
+                    <constraint firstItem="6eY-Fy-qt1" firstAttribute="top" secondItem="cvP-6c-AaI" secondAttribute="bottom" constant="1" id="XUf-q6-Q2f"/>
+                    <constraint firstItem="cvP-6c-AaI" firstAttribute="top" secondItem="ebG-KM-ivq" secondAttribute="bottom" constant="1" id="Y3E-2s-vpy"/>
+                    <constraint firstItem="6eY-Fy-qt1" firstAttribute="leading" secondItem="TLf-R3-fbN" secondAttribute="trailing" constant="8" id="a0K-Sp-RBH"/>
+                    <constraint firstItem="ebG-KM-ivq" firstAttribute="top" secondItem="vDR-vq-GTv" secondAttribute="top" constant="30" id="azK-CN-1Fu"/>
+                    <constraint firstItem="1Gk-rb-3qL" firstAttribute="leading" secondItem="vDR-vq-GTv" secondAttribute="leadingMargin" id="c66-5o-HK6"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="6xP-MM-Tb3" secondAttribute="trailing" constant="144" id="ezZ-nH-BfK"/>
+                    <constraint firstItem="1Gk-rb-3qL" firstAttribute="trailing" secondItem="vDR-vq-GTv" secondAttribute="trailingMargin" id="f4Q-lr-J41"/>
+                    <constraint firstItem="tHL-wo-Go3" firstAttribute="leading" secondItem="TLf-R3-fbN" secondAttribute="trailing" constant="8" id="jyq-cH-iyL"/>
+                    <constraint firstItem="cvP-6c-AaI" firstAttribute="leading" secondItem="TLf-R3-fbN" secondAttribute="trailing" constant="8" id="mB5-cV-dA9"/>
+                    <constraint firstAttribute="trailing" secondItem="ebG-KM-ivq" secondAttribute="trailing" constant="20" id="mSN-Xh-BA7"/>
+                    <constraint firstItem="TLf-R3-fbN" firstAttribute="leading" secondItem="vDR-vq-GTv" secondAttribute="leading" constant="20" id="nsr-DW-CPo"/>
+                    <constraint firstItem="6xP-MM-Tb3" firstAttribute="top" secondItem="6eY-Fy-qt1" secondAttribute="bottom" constant="1" id="r9m-is-G1r"/>
+                    <constraint firstAttribute="trailing" secondItem="6eY-Fy-qt1" secondAttribute="trailing" constant="18" id="w5j-xJ-G7i"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="bou-cd-RhF"/>
+            <connections>
+                <outlet property="brandNameLabel" destination="ebG-KM-ivq" id="vd2-gP-6Am"/>
+                <outlet property="buyDateLabel" destination="6eY-Fy-qt1" id="fcI-5B-dm2"/>
+                <outlet property="clothesImageView" destination="TLf-R3-fbN" id="3Nl-mO-BxG"/>
+                <outlet property="commentTextView" destination="1Gk-rb-3qL" id="aLb-ui-gqW"/>
+                <outlet property="priceLabel" destination="Ccm-Bc-Juf" id="1E8-YF-Yue"/>
+                <outlet property="putOnCountLabel" destination="dzH-4P-l1U" id="2fQ-YI-gCF"/>
+            </connections>
+            <point key="canvasLocation" x="36" y="15"/>
+        </tableViewCell>
+    </objects>
+</document>
